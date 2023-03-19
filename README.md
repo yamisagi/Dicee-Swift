@@ -62,7 +62,9 @@ In this repository, I will create basic app with Swift and you can make the die 
 
   - [x] Project Setup
   - [x] Add Launch Screen and App Icon
-
+  - [x] Add Dice Images
+  - [x] Add Button
+  - [x] Connect Button & Images to Code
 
 
   
