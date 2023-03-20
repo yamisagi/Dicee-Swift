@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     @IBAction func rollPressed(_ sender: UIButton) {
         let randomPickOne = Int.random(in: 0 ... 5) // Include starting and stop steps.
         let randomPickTwo = Int.random(in: 0 ... 5)
+        // Random kullanmak yerine, Array içerisinden .randomElement() fonksiyonu ile de işimizi halledebilirdik.
+        
         diceImageViewOne.image = UIImage(imageLiteralResourceName: images[randomPickOne])
         diceImageViewTwo.image = UIImage(imageLiteralResourceName: images[randomPickTwo])
         if randomPickOne == randomPickTwo {
