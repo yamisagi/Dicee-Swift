@@ -37,8 +37,5 @@ class ViewController: UIViewController {
         } else {
             resultText.text = "Player Two Wins !"
         }
-
-        print(randomPickOne)
-        print(randomPickTwo)
     }
 }
