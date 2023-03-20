@@ -14,16 +14,29 @@ class ViewController: UIViewController {
     // Bu durumda biz ilgili değişkenlerimizin image property'lerini değiştirmiş olduk.
     @IBOutlet var diceImageViewOne: UIImageView!
     @IBOutlet var diceImageViewTwo: UIImageView!
+    @IBOutlet var resultText: UILabel!
+    let images = ["DiceOne", "DiceTwo", "DiceThree", "DiceFour", "DiceFive", "DiceSix"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-
-        diceImageViewOne.image = UIImage(imageLiteralResourceName: "DiceSix")
-        diceImageViewTwo.image = UIImage(imageLiteralResourceName: "DiceSix")
+        diceImageViewOne.image = UIImage(imageLiteralResourceName: images[0])
+        diceImageViewTwo.image = UIImage(imageLiteralResourceName: images[0])
     }
 
     @IBAction func rollPressed(_ sender: UIButton) {
-        diceImageViewOne.image = UIImage(imageLiteralResourceName: "DiceOne")
-        diceImageViewTwo.image = UIImage(imageLiteralResourceName: "DiceTwo")
+        let randomPickOne = Int.random(in: 0 ... 5) // Include starting and stop steps.
+        let randomPickTwo = Int.random(in: 0 ... 5)
+        diceImageViewOne.image = UIImage(imageLiteralResourceName: images[randomPickOne])
+        diceImageViewTwo.image = UIImage(imageLiteralResourceName: images[randomPickTwo])
+        if randomPickOne == randomPickTwo {
+            resultText.text = "It's a Draw !"
+        } else if randomPickOne > randomPickTwo {
+            resultText.text = "Player One Wins !"
+        } else {
+            resultText.text = "Player Two Wins !"
+        }
+
+        print(randomPickOne)
+        print(randomPickTwo)
     }
 }

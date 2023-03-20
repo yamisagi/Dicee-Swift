@@ -65,8 +65,10 @@ In this repository, I will create basic app with Swift and you can make the die 
   - [x] Add Dice Images
   - [x] Add Button
   - [x] Connect Button & Images to Code
-
-
+  - [x] Randomise Dices with Random()
+  - [x] Create function to change Random Images
+  
+  
   
 <p align="center">(Still working on it...)</p>
 

@@ -24,6 +24,7 @@
 		B0DF478929C50C6E009082C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0DF478C29C50C6E009082C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0DF478E29C50C6E009082C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0E97A2429C89D4400C33715 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		B0DF477429C50C6C009082C5 = {
 			isa = PBXGroup;
 			children = (
+				B0E97A2429C89D4400C33715 /* README.md */,
 				B0DF477F29C50C6C009082C5 /* Dicee-Swift */,
 				B0DF477E29C50C6C009082C5 /* Products */,
 			);

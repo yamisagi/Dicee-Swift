@@ -17,25 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="erJ-VJ-ybQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="erJ-VJ-ybQ">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yd0-M1-s6U">
-                                <rect key="frame" x="76" y="149" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yd0-M1-s6U">
+                                <rect key="frame" x="76" y="140" width="241" height="128"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="8vl-ZQ-Pa1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="8vl-ZQ-Pa1">
                                 <rect key="frame" x="50" y="366" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="wUc-9z-gn2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="wUc-9z-gn2">
                                 <rect key="frame" x="226" y="366" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0R-q8-hKD">
-                                <rect key="frame" x="136" y="597" width="120" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0R-q8-hKD">
+                                <rect key="frame" x="136" y="597" width="121" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="mzg-E8-KcO"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Roll" cornerStyle="large" titleAlignment="center">
                                     <backgroundConfiguration key="background">
@@ -48,21 +46,58 @@
                                     <action selector="rollPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RWU-CV-S7b"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="MIh-zy-ipA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="MIh-zy-ipA">
+                                <rect key="frame" x="50" y="366" width="120" height="120"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" id="e3X-yt-P2Q">
                                 <rect key="frame" x="50" y="366" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="e3X-yt-P2Q">
-                                <rect key="frame" x="50" y="366" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Roll" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwa-5e-qo0">
+                                <rect key="frame" x="76" y="303" width="241" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5NS-hW-mmZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                <color key="textColor" red="0.57647058823529407" green="0.098713387951148354" blue="0.050980392156862744" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yd0-M1-s6U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="0ph-5Q-RsE"/>
+                            <constraint firstItem="Dwa-5e-qo0" firstAttribute="top" secondItem="yd0-M1-s6U" secondAttribute="bottom" constant="35" id="2I2-hd-8XJ"/>
+                            <constraint firstItem="8vl-ZQ-Pa1" firstAttribute="bottom" secondItem="e3X-yt-P2Q" secondAttribute="bottom" id="3Bo-gU-wb9"/>
+                            <constraint firstItem="yd0-M1-s6U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3d3-Hj-41c"/>
+                            <constraint firstItem="erJ-VJ-ybQ" firstAttribute="centerX" secondItem="t0R-q8-hKD" secondAttribute="centerX" id="3qt-1f-qE4"/>
+                            <constraint firstItem="yd0-M1-s6U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="55p-SY-8Yc"/>
+                            <constraint firstItem="wUc-9z-gn2" firstAttribute="leading" secondItem="8vl-ZQ-Pa1" secondAttribute="trailing" constant="56" id="5yz-Tg-NHP"/>
+                            <constraint firstItem="MIh-zy-ipA" firstAttribute="trailing" secondItem="8vl-ZQ-Pa1" secondAttribute="trailing" id="9tv-Br-728"/>
+                            <constraint firstItem="yd0-M1-s6U" firstAttribute="leading" secondItem="Dwa-5e-qo0" secondAttribute="leading" id="Hd2-2S-QQu"/>
+                            <constraint firstItem="8vl-ZQ-Pa1" firstAttribute="top" secondItem="e3X-yt-P2Q" secondAttribute="top" id="K0m-yN-PsU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t0R-q8-hKD" secondAttribute="bottom" constant="151" id="MyI-Z7-f4q"/>
+                            <constraint firstItem="8vl-ZQ-Pa1" firstAttribute="top" secondItem="MIh-zy-ipA" secondAttribute="top" id="Wnz-du-MVW"/>
+                            <constraint firstItem="erJ-VJ-ybQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-59" id="Yev-g7-sFd"/>
+                            <constraint firstItem="MIh-zy-ipA" firstAttribute="top" secondItem="wUc-9z-gn2" secondAttribute="top" id="arp-hr-wNs"/>
+                            <constraint firstItem="yd0-M1-s6U" firstAttribute="trailing" secondItem="Dwa-5e-qo0" secondAttribute="trailing" id="cpZ-dh-Ive"/>
+                            <constraint firstItem="MIh-zy-ipA" firstAttribute="bottom" secondItem="wUc-9z-gn2" secondAttribute="bottom" id="dxf-NX-iPV"/>
+                            <constraint firstItem="8vl-ZQ-Pa1" firstAttribute="leading" secondItem="e3X-yt-P2Q" secondAttribute="leading" id="gTa-4u-dL2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wUc-9z-gn2" secondAttribute="trailing" constant="47" id="hBo-sf-ACz"/>
+                            <constraint firstItem="Dwa-5e-qo0" firstAttribute="centerX" secondItem="t0R-q8-hKD" secondAttribute="centerX" id="k3G-T9-gYc"/>
+                            <constraint firstItem="erJ-VJ-ybQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kGD-nt-QK5"/>
+                            <constraint firstItem="erJ-VJ-ybQ" firstAttribute="centerY" secondItem="MIh-zy-ipA" secondAttribute="centerY" id="kVh-2X-F6W"/>
+                            <constraint firstItem="t0R-q8-hKD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="kjL-FG-96m"/>
+                            <constraint firstItem="8vl-ZQ-Pa1" firstAttribute="bottom" secondItem="MIh-zy-ipA" secondAttribute="bottom" id="lEY-Ix-FUQ"/>
+                            <constraint firstItem="MIh-zy-ipA" firstAttribute="leading" secondItem="e3X-yt-P2Q" secondAttribute="leading" id="ucs-Hm-wnV"/>
+                            <constraint firstItem="8vl-ZQ-Pa1" firstAttribute="trailing" secondItem="e3X-yt-P2Q" secondAttribute="trailing" id="zuy-e4-cVz"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="diceImageViewOne" destination="e3X-yt-P2Q" id="tto-at-2k3"/>
                         <outlet property="diceImageViewTwo" destination="wUc-9z-gn2" id="kUa-Xo-PJ7"/>
+                        <outlet property="resultText" destination="Dwa-5e-qo0" id="6gI-ky-FVz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
